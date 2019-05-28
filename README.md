@@ -17,6 +17,10 @@ Index:
 -6  -5  -4  -3  -2  -1
 ```
 
+## List
+
+A single list may contain DataTypes like Integers, Strings, as well as Objects. Lists are also very useful for implementing stacks and queues. Lists are mutable, and hence, they can be altered even after their creation.
+
 ### print()
 
 ```
