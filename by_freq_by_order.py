@@ -2,7 +2,7 @@
 # Output: [2,2,2,2,8,8,7,7,4,1]
 
 # 1) Sort by Frequency
-# 2) Sort by Order
+# 2) Sort by Order: i.e. if two values have the same frequency, order must be retained.
 
 # Declare a dictionary 
 dict = {}
