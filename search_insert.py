@@ -28,3 +28,17 @@ class Solution:
                 return index
             if index == len(nums) - 1 and value < target:
                 return index + 1
+
+# Runtime: 36 ms, faster than 89.98% of Python3 online submissions for Search Insert Position.
+# Memory Usage: 13.6 MB, less than 69.77% of Python3 online submissions for Search Insert Position.
+
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        for index, value in enumerate(nums):
+            if value == target or value > target:
+                return index
+        if nums[len(nums) - 1] < target:
+            return len(nums)
+
+# Runtime: 32 ms, faster than 96.99% of Python3 online submissions for Search Insert Position.
+# Memory Usage: 13.8 MB, less than 13.17% of Python3 online submissions for Search Insert Position.
