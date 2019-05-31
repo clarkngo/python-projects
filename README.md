@@ -1,5 +1,7 @@
 # Python Notes
 
+I transitioned from Java to solve problems and learn from them quicker.
+
 ## Variables
 - no concept of declaration
 - variable data type is decided at run time depending of the value it is being referred to
