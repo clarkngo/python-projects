@@ -1,28 +1,39 @@
+# l1 = ["b","o","l","m","v"]
+# l2 = ["r", "e", "i", "o", "a"]
+# l3 = ["m", "l", "t", "c", "p"]
+# l4 = ["t", "a", "u", "i", "h"]
+# l5 = ["s", "h", "r", "m", "k"]
+# arr = []
+# arr_e = []
 
-# list_indices = [2,3,4]
-# for i in range(0, len(list_indices) - 1):
-#   print(i)
-#   if (list_indices[i] + list_indices[i+1] == 6):
-#       list_indices.append(i + 1)
-#       list_indices.append(i + 2)
-#       print(list_indices)
-      
-# solution
-x =210
-def reverse(x):
-  solution = 0
-  isNegative = False
-  digit = 0
-  if (x < 0):
-      x *= - 1
-      isNegative = True
-  while (x % 10 == 0):
-      x //= 10
-  while (x > 0):
-      digit = x % 10
-      solution = digit + solution * 10
-      x //= 10
-  if (isNegative):
-      solution *= -1
-  return solution  
-  
+# for i in range(len(l1)):
+#   for j in range(len(l2)):
+#     for k in range(len(l3)):
+#       for l in range(len(l4)):
+#         for m in range(len(l5)):
+#           arr.append(l1[i] + l2[j] + l3[j] + l4[l] + l5[m])
+
+
+# for i in range(len(arr)):
+#   if "e" in arr[i]:
+#     arr_e.append(arr[i])
+
+# print(arr_e)
+
+
+l1 = ["b","o","l","m","v"]
+l2 = ["e"]
+l3 = ["m", "l", "t", "c", "p"]
+l4 = ["a"]
+l5 = ["r"]
+arr = []
+arr_e = []
+
+for i in range(len(l1)):
+  for j in range(len(l2)):
+    for k in range(len(l3)):
+      for l in range(len(l4)):
+        for m in range(len(l5)):
+          arr.append(l1[i] + l2[j] + l3[j] + l4[l] + l5[m])
+
+print(arr)
