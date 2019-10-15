@@ -7,7 +7,7 @@ def makedirectory(ans):
             # if directory already exists, skip to make the next one
             if i < 10:
                 try:
-                    os.mkdir('Module0{}'.format(i))
+                    os.mkdir('Module{}'.format(i))
                 except FileExistsError:
                     continue
             else:
