@@ -1,4 +1,3 @@
-
 num = 3
 if num > 0:
     print(num, "is a positive number.")
@@ -92,7 +91,7 @@ print("The total sum of even numbers is ", sum)
 
 i = 0
 sum = 0
-while i < len(list_num): 
+while i < len(list_num):
     if(list_num[i]%2 == 0):
         sum = sum + list_num[i]
     i = i + 1
