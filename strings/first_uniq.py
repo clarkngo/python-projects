@@ -7,27 +7,27 @@
 # return -1.
 
 import unittest # unit test framework
-from typing import List
 
-class Solution:
-    def firstUniqChar(self, s: str) -> int:
-        my_dict = {}
-        for i in range(len(s)):
-            if s[i] not in my_dict:
-                my_dict[s[i]] = [i, 1]      # [index, count]
-            else:
-                my_dict[s[i]][1] += 1
-        arr = list(my_dict.values())
+# works with unit test but not on leetcode
+# from typing import List
 
-        # linear search first occurence of 1 count
-        for j in range(len(arr)):
-            # if count of character is 1
-            if arr[j][1] == 1:
-                return arr[j][0]    # return index
+# class Solution:
+#     def firstUniqChar(self, s: str) -> int:
+#         my_dict = {}
+#         for i in range(len(s)):
+#             if s[i] not in my_dict:
+#                 my_dict[s[i]] = [i, 1]      # [index, count]
+#             else:
+#                 my_dict[s[i]][1] += 1
+#         arr = list(my_dict.values())
 
+#         # linear search first occurence of 1 count
+#         for j in range(len(arr)):
+#             # if count of character is 1
+#             if arr[j][1] == 1:
+#                 return arr[j][0]    # return index
+#         return -1
 
-
-a = Solution()
 class Test(unittest.TestCase):
 
     def test(self):
