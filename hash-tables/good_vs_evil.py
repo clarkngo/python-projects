@@ -96,6 +96,21 @@ def goodVsEvil2(good, evil):
     else:
         return result + 'No victor on this battle field'
 
+# another solution
+def goodVsEvil3(good, evil):
+    GOOD_WIN = "Battle Result: Good triumphs over Evil"
+    EVIL_WIN = "Battle Result: Evil eradicates all trace of Good"
+    DRAW = "Battle Result: No victor on this battle field"
+
+    GOOD = [1, 2, 3, 3, 4, 10]
+    EVIL = [1, 2, 2, 2, 3, 5, 10]
+
+    def goodVsEvil(good, evil):
+        g = sum(map(lambda x, y: x * y, GOOD, [int(x) for x in good.split(' ')]))
+        e = sum(map(lambda x, y: x * y, EVIL, [int(x) for x in evil.split(' ')]))
+        return GOOD_WIN if g > e else EVIL_WIN if e > g else DRAW
+
+
 import unittest
 
 class Test(unittest.TestCase):
