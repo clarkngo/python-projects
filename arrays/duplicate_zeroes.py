@@ -20,25 +20,44 @@
 from typing import List
 
 class Solution:
-    def duplicateZeros(self, arr: List[int]) -> None:
-        """
-        Do not return anything, modify arr in-place instead.
-        """
-        print(arr)
-        hasZero = False
-        count = 0
-        for i in range(len(arr)):
-          if hasZero == True:
-            hasZero = False
-            continue
-          if arr[i] == 0:
-            arr.insert(i+1, 0)
-            hasZero = True
-            count += 1
-        while count != 0:
-          arr.pop()
-          count -= 1
-        print(arr)
+	def duplicateZeroes(self, arr: List[int]) -> None:
+		"""
+		Do not return anything, modify arr in-place instead.
+		"""
+		print(arr)
+		hasZero = False
+		count = 0
+		for i in range(len(arr)):
+			if hasZero == True:
+				hasZero = False
+				continue
+			if arr[i] == 0:
+				arr.insert(i+1, 0)
+				hasZero = True
+				count += 1
+		while count != 0:
+			arr.pop()
+			count -= 1
+		print(arr)
+
+	def duplicateZeroes2(self, arr: List[int]) -> None:
+		"""
+		Do not return anything, modify arr in-place instead.
+		"""
+		print(arr)
+		count = 0
+		for i in range(len(arr)):
+			if arr[i] == 0 and i < len(arr):
+				arr.insert(i+1, 0)
 
 a = Solution()
-a.duplicateZeros([1,0,2,3,0,4,5,0])
+a.duplicateZeroes([1,0,2,3,0,4,5,0])
+a.duplicateZeroes2([1,0,2,3,0,4,5,0])
+
+# import unittest
+# class Test(unittest.TestCase):
+# 	def test(self):
+# 		self.assertEqual(a.duplicateZeroes([1,0,2,3,0,4,5,0], [1, 0, 0, 2, 3, 0, 0, 4]))
+
+# if __name__ == '__main__':
+#     unittest.main()
