@@ -53,32 +53,29 @@ class MyLinkedList:
         Initialize your data structure here.
         """
         self.head = Node()  # a new empty node is create whenever you create a new linked list
+        self.length = 0
 
     def get(self, index: int) -> int:
         """
         Get the value of the index-th node in the linked list. If the index is invalid, return -1.
         """
+        if index < 0:
+          return -1
+        if index >= self.length:
+          return -1
+        if index < self.length:
+          cur = self.head
+          for i in range(index):
+            cur = cur.next
+        return cur.val
 
-        cur = self.head     # current node starts at the head
-        pointer = 0         # pointer to know which node/index we are currently at
-
-        if index == 0:
-            return cur.val
-        elif index > self.getLength():
-            return -1       # invalid index
-        else:
-            while cur.next != None:
-                pointer += 1            # move the pointer
-                if index == pointer:
-                    return cur.next.val # return value of node if pointer reached the index
-                cur = cur.next
 
     def addAtHead(self, val: int) -> None:
         """
         Add a node of value val before the first element of the linked list.
         After the insertion, the new node will be the first node of the linked list.
         """
-
+        self.length += 1
         # if no new node is inserted yet
         # overwrite the head as head starts with val=None and next=None
         if self.head.val == None:
@@ -93,6 +90,7 @@ class MyLinkedList:
         """
         Append a node of value val to the last element of the linked list.
         """
+        self.length += 1
         cur = self.head
         # iterate until you reach the tail
         while cur.next != None:
@@ -106,6 +104,7 @@ class MyLinkedList:
         If index equals to the length of linked list, the node will be appended to the end of linked list.
         If index is greater than the length, the node will not be inserted.
         """
+        self.length += 1
         new_node = Node(val)
         cur = self.head
         previous = self.head
@@ -116,7 +115,7 @@ class MyLinkedList:
             self.head = new_node
 
 
-        elif index <= self.getLength():
+        elif index <= self.length:
             pointer += 1
             while pointer < index:
                 cur = cur.next
@@ -136,7 +135,8 @@ class MyLinkedList:
         pointer = 0
         if index == 0:
             self.head = cur.next
-        elif index < self.getLength():
+            self.length -= 1
+        elif index < self.length:
             pointer += 1
             while pointer < index:
                 cur = cur.next
@@ -144,22 +144,8 @@ class MyLinkedList:
                 pointer += 1
             cur = cur.next
             previous.next = cur.next
+            self.length -= 1
 
-
-    def getLength(self) -> int:
-        length = 0
-        # if no node exist
-        if self.head.val == None:
-            return length
-
-        cur = self.head
-        length = 1  # start with head node
-        # iterate until tail
-        while cur.next != None:
-            cur = cur.next
-            length += 1
-
-        return length
 
 
     def printLinkedList(self) -> None:
@@ -189,11 +175,10 @@ class MyLinkedList:
 # obj.deleteAtIndex(2)
 # obj.printLinkedList()
 
-# obj = MyLinkedList()
-# print(obj.getLength())
-# print(obj.get(22))
-# obj.addAtHead(2)
-# obj.deleteAtIndex(1)
-# obj.addAtTail(22)
-# print(obj.getLength())
-# obj.printLinkedList()
+obj = MyLinkedList()
+print(obj.get(-1))
+obj.addAtHead(2)
+obj.deleteAtIndex(1)
+obj.addAtTail(22)
+obj.printLinkedList()
+
