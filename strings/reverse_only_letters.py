@@ -35,15 +35,19 @@ class Solution:
             if S[i].isalpha():
                 listAlpha.append(S[i])
             else:
-                listOthers.append([S[i],i])
+                listOthers.append([S[i],i])     # save the character and position
         listAll = listAlpha[::-1]
         for j in range(len(listOthers)):
             while listOthers:
+                # insert character before the index of a list
                 listAll.insert(listOthers[0][1], listOthers[0][0])
                 listOthers.pop(0)
         return "".join(listAll)
 
-    def reverseOnlyLetters(self, S):
+    # Go over the string and construct new string:
+    # by adding non-alphabetic characters or
+    # dumping from "to be reversed" r stack.
+    def reverseOnlyLetters(self, S) :
         r = [s for s in S if s.isalpha()]
         return "".join(S[i] if not S[i].isalpha() else r.pop() for i in range(len(S)))
 
