@@ -112,5 +112,5 @@ def append(listA, listB):
     cur = head
     while cur.next != None:
         cur = cur.next
-    cur.next = listB
+    cur.next = listB        # connects the tail of listA to listB
     return head
