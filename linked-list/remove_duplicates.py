@@ -33,8 +33,8 @@ class Solution:
                 cur = cur.next
         return head
 
-    def deleteDuplicates(self, head):
+    def deleteDuplicates2(self, head):
             if head and head.next:
-                head.next = self.deleteDuplicates(head.next)
+                head.next = self.deleteDuplicates2(head.next)
                 return head.next if head.next.val == head.val else head
             return head
