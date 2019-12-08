@@ -20,10 +20,14 @@ def last(s):
     lst = s.split(" ")
     last_chars = []
     sorted_by_last_char = []
+
+    # get all the last characters and push in an array
     for i in range(len(lst)):
         last_chars.append(lst[i][-1])
+
+    # sort the single characters in the array
     last_chars.sort()
-    print(last_chars)
+
     while last_chars != []:
         for j in range(len(lst)):
             if last_chars[0] == lst[j][-1]:
