@@ -22,3 +22,9 @@ def sum_mix(arr):
         else:
             total += val
     return total
+
+def sum_mix(arr):
+    return sum(map(int, arr))
+
+def sum_mix(arr):
+    return sum(int(n) for n in arr)
