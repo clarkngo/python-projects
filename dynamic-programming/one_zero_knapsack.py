@@ -13,7 +13,7 @@
 #        4 | 5
 #        5 | 7
 #
-# Output: []
+# Output: [[4,5], [3,4]]
 
 from typing import List
 def knapsack(items: List, weight: int) -> List:
