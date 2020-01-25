@@ -34,18 +34,32 @@
 # 0 <= arr.length <= 105
 # -109 <= arr[i] <= 109
 
-class Solution(object):
-    def arrayRankTransform(self, A):
-        rank = {}
-        for i,a in enumerate(sorted(A)):
-            if a not in rank:
-                rank[a] = len(rank) + 1
-        return [rank[a] for a in A]
+# class Solution(object):
+#     def arrayRankTransform(self, A):
+#         rank = {}
+#         for i,a in enumerate(sorted(A)):
+#             if a not in rank:
+#                 rank[a] = len(rank) + 1
+#         return [rank[a] for a in A]
 
-class Solution(object):
-    def arrayRankTransform(self, A):
-        vals = sorted(set(A))
-        m = {}
-        for i, v in enumerate(vals):
-            m[v] = i + 1
-        return [m[x] for x in A]
+# class Solution(object):
+#     def arrayRankTransform(self, A):
+#         vals = sorted(set(A))
+#         m = {}
+#         for i, v in enumerate(vals):
+#             m[v] = i + 1
+#         return [m[x] for x in A]
+
+# My Solution
+class Solution:
+    def arrayRankTransform(self, arr):
+        s_arr = sorted(arr)
+        d = {}
+        rank = 1
+        for i in range(len(s_arr)):
+            if s_arr[i] not in d:
+                d[s_arr[i]] = rank
+                rank += 1
+        for i in range(len(arr)):
+            arr[i] = d[arr[i]]
+        return arr
