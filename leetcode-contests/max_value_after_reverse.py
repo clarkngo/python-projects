@@ -10,8 +10,6 @@
 
 # Find maximum possible value of the final array.
 
-
-
 # Example 1:
 
 # Input: nums = [2,3,1,5,4]

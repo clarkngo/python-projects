@@ -63,3 +63,7 @@ class Solution:
         for i in range(len(arr)):
             arr[i] = d[arr[i]]
         return arr
+
+s = Solution()
+ans = s.arrayRankTransform([37,12,28,9,100,56,80,5,12])
+print(ans)
