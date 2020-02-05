@@ -40,3 +40,36 @@ class Solution:
                 for row in matrix[::-1]:
                     results.append(row.pop(0))        # bottom to top
         return results
+
+# Input:
+# [
+#  [ 1, 2, 3 ],
+#  [ 4, 5, 6 ],
+#  [ 7, 8, 9 ]
+# ]
+# 1st loop and after "left to right":
+# [
+#  [ 4, 5, 6 ],
+#  [ 7, 8, 9 ]
+# ]
+# 1st loop and after "top to bottom":
+# [
+#  [ 4, 5],
+#  [ 7, 8]
+# ]
+# 1st loop and after "right to left":
+# [
+#  [ 4, 5]
+# ]
+# 1st loop and after "bottom to top":
+# [
+#  [5]
+# ]
+# 2nd loop:
+# [
+#  [5]
+# ]
+# 2nd loop and after "left to right":
+# [
+#  []
+# ]
