@@ -37,16 +37,19 @@ class Solution:
                     nums2.remove(nums1[i])
         return res
 
+# Runtime: 44 ms, faster than 81.85% of Python3 online submissions for Intersection of Two Arrays II.
+# Memory Usage: 13 MB, less than 94.29% of Python3 online submissions for Intersection of Two Arrays II.
+
+class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        intersection = []
-        num1Dict = {}
+        res = []
+        d = {}
+        for num in nums1:
+            d[num] = d[num] + 1 if num in d else 1
 
-        for n in nums1:
-            num1Dict[n] = num1Dict[n] + 1 if n in num1Dict else 1
+        for num in nums2:
+            if num in d and d[num] > 0:
+                res.append(num)
+                d[num] -= 1
 
-        for n in nums2:
-            if n in num1Dict and num1Dict[n] > 0:
-                intersection.append(n)
-                num1Dict[n] = num1Dict[n] - 1
-
-        return intersection
+        return res
