@@ -1,0 +1,284 @@
+Issue# 1 - What are some of your ideas on building an alternative to Meetup.com?
+Issue# 2 - Tech Stack
+Issue# 3 - Fix readme link
+Issue# 4 - Update README.md
+Issue# 5 - Feature: UX - Design Landing page
+Issue# 6 - Feature Dev - Landing Page
+Issue# 7 - Feature Dev - Personalized Page
+Issue# 8 - Feature Dev Design recommendation Microservice to find similar groups and events that I am currently a part of
+Issue# 9 - Feature Dev Design Meetup microservice
+Issue# 10 - Feature Dev - Design alert system
+Issue# 11 - Post your introductions here :)
+Issue# 12 - Chapter Documentation
+Issue# 13 - Adding a story where organizers can see participants attendance rate
+Issue# 14 - Add organizer feat: required info
+Issue# 15 - add initial schema ddl + diagram
+Issue# 16 - API: Add "admin" as a user type
+Issue# 17 - Spiking on the API using Next.js
+Issue# 18 - Add a nickname for a user
+Issue# 19 - Add a contributors guide
+Issue# 20 - Feature - Mobile client
+Issue# 21 - Internationalize the Chapter Application
+Issue# 22 - docs: Improvement to README
+Issue# 23 - Monitoring, logging, alerting, ci/cd, automation of the creation of resources
+Issue# 24 - Why not TS :'(
+Issue# 25 - Potential Feature for V1 or V2
+Issue# 26 - Adapt users to be external ID providers friendly
+Issue# 27 - Add waitlist support in RSVPs
+Issue# 28 - Best Practices
+Issue# 29 - Initial stab at a GQL API and UI
+Issue# 30 - Add Next.js with API routes boilerplate
+Issue# 31 - Added created and updated timestamp fields for each table
+Issue# 32 - Elasticsearch as a hard requirement
+Issue# 33 - Discovery and Searching Across Collective Instances
+Issue# 34 - Frontend libs
+Issue# 35 - Howdy folks!
+Issue# 36 - Feature Dev - RSS feeds
+Issue# 37 - Created tags table-gave users table tag id-updated readme with this u…
+Issue# 38 - README - Docker image -> Docker container
+Issue# 39 - Add description, ends_at, starts_at to Event
+Issue# 40 - Shared Profile Data & Auth Across Organizations
+Issue# 41 - Contributingv0.1
+Issue# 42 - Update venue to have capacity
+Issue# 43 - Add capacity to event table
+Issue# 44 - Discussion: Analytics & Tracking
+Issue# 45 - Minor updates to the README
+Issue# 46 - Add swagger json
+Issue# 47 - Our Roadmap
+Issue# 48 - Add contributing guide
+Issue# 49 - Relocate Quick Links from the Pinned Discourse post. Add Schema heading. Add Project Lead
+Issue# 50 - Added organiser user story
+Issue# 51 - fix: create tags before referencing
+Issue# 52 - I'm Arsad Rahman from India , More than 5 years experience as Software Engineer - Full stack native mobile application developer (Both Android , IOS) now working independent freelancing .
+Issue# 53 - Changes to RSVP model
+Issue# 54 - Schema image / ER Diagram is out of date
+Issue# 55 - feat: adding logo to sponsor table
+Issue# 56 - React tech: Gatsby vs Next vs ??
+Issue# 57 - Reuse user_groups table table for user bans
+Issue# 58 - Terminology
+Issue# 59 - Reorder table definitions so the script can run
+Issue# 60 - Geocoding functionality
+Issue# 61 - Add terminology to the README
+Issue# 62 - Nik john/add venue capacity
+Issue# 63 - Add capacity to events
+Issue# 64 - Use passwordless for auth
+Issue# 65 - Accessibility
+Issue# 66 - feat(docs): Documentation Overhaul
+Issue# 67 - What SEO Requirements and Schema types are needed for events and pages ?
+Issue# 68 - Add Quick Links to the Readme for Accessibility, Shared Profile Data & Auth, and Discovery and Searching Across Collective Instances
+Issue# 69 - Add Code of Conduct
+Issue# 70 - Update database schema image
+Issue# 71 - Add category to Chapters Table schema
+Issue# 72 - Spec country code as 2-letter, use i18n-friendly column names for state/zip
+Issue# 73 - Database migration tool
+Issue# 74 - fix(docs): issue template rendering
+Issue# 75 - added street number and address  to location
+Issue# 76 - Testing libraries/frameworks?
+Issue# 77 - Use docker-compose for setting up the development flow
+Issue# 78 - App Skeleton using Next.js, Node/Express, React
+Issue# 79 - Add user story: Save RSVP'd events to calendar
+Issue# 80 - Using Fastify instead of Express
+Issue# 81 - fix/feat/api/swagger.json fix/feat/data/ddl.sql Added category label of types tring to the schemas closes #71
+Issue# 82 - Remove closed issues from the CONTRIBUTING.md. Minor formatting and s…
+Issue# 83 - MVP user stories
+Issue# 84 - Post-release user stories
+Issue# 85 - create organized folders and starter docs files
+Issue# 86 - docs - "groups" should be called "chapters"
+Issue# 87 - fix (docs): renaming "groups" to "chapters"
+Issue# 88 - Format Contributing section in README
+Issue# 89 - Discussion: standardize merge workflow
+Issue# 90 - Add stories related to auth flow
+Issue# 91 - docs: README.MD clarity fixes
+Issue# 92 - docs: edited README.md for clarity (language edit) and add backticks to user story
+Issue# 93 - Adding details to the documentation.
+Issue# 94 - link https://www.freecodecamp.org added, case change in doc
+Issue# 95 - API: As an organizer I can see how many times a participant has come to my chapter's events as well as their attendance rate.
+Issue# 96 - API: As an organizer I can add a sponsor to the event with a link to their website as a way of thanking them.
+Issue# 97 - As an organizer I can add a venue sponsor to the event with a link to their website as a way of thanking them for hosting.
+Issue# 98 - API: As an organizer I can ban a participant whom I believe is toxic or who has previously broken my organization's code of conduct.
+Issue# 99 - API: As an organizer I can email the entire list of participants.
+Issue# 100 - API: As an organizer I can cancel events and all participants who have RSVP'd will get an email notification.
+Issue# 101 - API: As a user (authenticated or not) I can view the RSVP count for an event
+Issue# 102 - API: As an organizer I can create events and set their location, tags and capacity.
+Issue# 103 - API: As an organizer I can add a chapter or organization logo.
+Issue# 104 - API: As an organizer I can edit details about the chapter, including a Slack/Discord/Facebook/WeChat/WhatsApp link participants can join to discuss and coordinate events.
+Issue# 105 - API: As an organizer I can create a chapter.
+Issue# 106 - API: As a chapter member, I can unsubscribe from emails.
+Issue# 107 - API: As a future participant after the event, I will automatically get emails notifying me of subsequent events.
+Issue# 108 - API: As a future participant I will receive a second email the day before the event to remind me.
+Issue# 109 - API: As a future participant I can cancel the "RSVP".
+Issue# 110 - API: As a future participant I can click the "RSVP" button. When I do, I will be prompted to sign in. Then I will receive an email with a ticket and add me to the public list of event attendees.
+Issue# 111 - API: As a future participant when I click one of those locations, I can see the "show view" for that event's chapter, with details about the upcoming event, along with a button to RSVP.
+Issue# 112 - API: As a future participant I can use a search box on the landing page to input a city, state, or country name and it will autocomplete. I can click one of those locations.
+Issue# 113 - Update our tech stack based on meeting decisions
+Issue# 114 - MVP Wireframes/Mock-ups
+Issue# 115 - docs: fix typo/grammar in how-to-open-a-pull-request.md
+Issue# 116 - Consider using uncle bob's clean architecture for Api
+Issue# 117 - DB Schema - what if we tagged Events with tags.
+Issue# 118 - fix next config syntax and linting
+Issue# 119 - Add github ci workflow
+Issue# 120 - Initialize sequelize
+Issue# 121 - Add styled-components, config
+Issue# 122 - [WIP] Add esdoc to dev environment
+Issue# 123 - React Class Components VS Functional Components w/hooks
+Issue# 124 - fix eslint rules for jest
+Issue# 125 - As an attendee, I can RSVP "no" for an event
+Issue# 126 - Events should allow for longer descriptions
+Issue# 127 - Allow descriptions for Sponsors
+Issue# 128 - Rewrite routing
+Issue# 129 - Update diagram
+Issue# 130 - Change the schema image path in the README to a relative path
+Issue# 131 - Fix/update readme
+Issue# 132 - Put schema diagram in a dropdown
+Issue# 133 - Fix README.md
+Issue# 134 - Refactor: extract routes in folder
+Issue# 135 - Add lint stage in CI
+Issue# 136 - Added config to lint in github action
+Issue# 137 - add serverside testing [WIP]
+Issue# 138 - add data models typescript interfaces
+Issue# 139 - add serverside testing [WIP]
+Issue# 140 - feat(sponsors): add component for adding a sponsor to an event
+Issue# 141 - fix(docs): small typo in readme
+Issue# 142 - testing issue template
+Issue# 143 - fix(_document.tsx): add react to scope of file
+Issue# 144 - Browser Support Matrix
+Issue# 145 - Decide which state management tool to use
+Issue# 146 - add email service with nodemailer
+Issue# 147 - Discussion: Reasoning on the architecture and deployment of Chapter
+Issue# 148 - add globalstyles and minimal css reset
+Issue# 149 - My changes
+Issue# 150 - Update groups-and-events.md
+Issue# 151 - Update README Based on Roadmap. Remove Stale Information
+Issue# 152 - ⬆️  - resolving npm audit fix warnings
+Issue# 153 - fix(docs) - Docker installation instructions
+Issue# 154 - add material UI
+Issue# 155 - Css grid Boilerplate - progressive enhancement for browsers that don't support grid
+Issue# 156 - Font scaling for different resolution screens (laptop/desktop specifically)
+Issue# 157 - Recording description creation date for tags
+Issue# 158 - Nik john/add material ui ssr
+Issue# 159 - Thomasroest/basic layout component
+Issue# 160 - Improvement: Sequelize behaviour
+Issue# 161 - Add seeds
+Issue# 162 - Add TypeORM models
+Issue# 163 - Using useReducer for form data
+Issue# 164 - Switch default runs every time
+Issue# 165 - Question: Is node-typescript necessary?
+Issue# 166 - Add Redux/Thunk with bare minimum setup
+Issue# 167 - Change Discord Link
+Issue# 168 - Fix: Remove unused node-typescript to fix node version conflicts
+Issue# 169 - Organize the team
+Issue# 170 - added welcome discord link
+Issue# 171 - API: As an admin I can add a Google Analytics ID
+Issue# 172 - Test issue to try and add contributors
+Issue# 173 - docs: add nik-john as a contributor
+Issue# 174 - Add All Contributors
+Issue# 175 - docs: add raufabr as a contributor
+Issue# 176 - docs: add Sonicrida as a contributor
+Issue# 177 - docs: add ThomasRoest as a contributor
+Issue# 178 - docs: add ScottBrenner as a contributor
+Issue# 179 - docs: add allella as a contributor
+Issue# 180 - docs: add joelrozen as a contributor
+Issue# 181 - docs: add yitzhak-bloy as a contributor
+Issue# 182 - docs: add eolculnamo2 as a contributor
+Issue# 183 - docs: add matjack1 as a contributor
+Issue# 184 - docs: add xarielx as a contributor
+Issue# 185 - docs: add nik-john as a contributor
+Issue# 186 - docs: add Zeko369 as a contributor
+Issue# 187 - docs: add Lobarr as a contributor
+Issue# 188 - docs: add finisher1017 as a contributor
+Issue# 189 - docs: add lakshmipriyamukundan as a contributor
+Issue# 190 - docs: add rhvdbergh as a contributor
+Issue# 191 - docs: add rodmsmendes as a contributor
+Issue# 192 - docs: add chrismgonzalez as a contributor
+Issue# 193 - docs: add vkWeb as a contributor
+Issue# 194 - docs: add iansltx as a contributor
+Issue# 195 - docs: add raufabr as a contributor
+Issue# 196 - docs: add raufabr as a contributor
+Issue# 197 - docs: add Sonicrida as a contributor
+Issue# 198 - docs: add Sonicrida as a contributor
+Issue# 199 - docs: add ThomasRoest as a contributor
+Issue# 200 - docs: add ScottBrenner as a contributor
+Issue# 201 - docs: add allella as a contributor
+Issue# 202 - docs: add joelrozen as a contributor
+Issue# 203 - docs: add yitzhak-bloy as a contributor
+Issue# 204 - docs: add eolculnamo2 as a contributor
+Issue# 205 - docs: add matjack1 as a contributor
+Issue# 206 - docs: add matjack1 as a contributor
+Issue# 207 - docs: add xarielx as a contributor
+Issue# 208 - docs: add matjack1 as a contributor
+Issue# 209 - docs: add matjack1 as a contributor
+Issue# 210 - docs: add timmyichen as a contributor
+Issue# 211 - docs: add nik-john as a contributor
+Issue# 212 - docs: add Zeko369 as a contributor
+Issue# 213 - docs: add Lobarr as a contributor
+Issue# 214 - docs: add finisher1017 as a contributor
+Issue# 215 - docs: add lakshmipriyamukundan as a contributor
+Issue# 216 - docs: add rhvdbergh as a contributor
+Issue# 217 - docs: add rodmsmendes as a contributor
+Issue# 218 - docs: add chrismgonzalez as a contributor
+Issue# 219 - docs: add Guusy as a contributor
+Issue# 220 - docs: add vkWeb as a contributor
+Issue# 221 - docs: add iansltx as a contributor
+Issue# 222 - docs: add vkWeb as a contributor
+Issue# 223 - docs: add kognise as a contributor
+Issue# 224 - docs: add wendelnascimento as a contributor
+Issue# 225 - docs: add praveenweb as a contributor
+Issue# 226 - docs: add shangeethsivan as a contributor
+Issue# 227 - docs: add conr as a contributor
+Issue# 228 - docs: add PrestonElliott as a contributor
+Issue# 229 - docs: add email2vimalraj as a contributor
+Issue# 230 - docs: add francocorreasosa as a contributor
+Issue# 231 - docs: add ManoelLobo as a contributor
+Issue# 232 - docs: add dmmulroy as a contributor
+Issue# 233 - docs: add MirzaChilman as a contributor
+Issue# 234 - docs: add quincylarson as a contributor
+Issue# 235 - docs: add ceciliaconsta3 as a contributor
+Issue# 236 - docs: add madaleneaza-design as a contributor
+Issue# 237 - docs: add vkWeb as a contributor
+Issue# 238 - docs: add SeanRParker as a contributor
+Issue# 239 - docs: add finisher1017 as a contributor
+Issue# 240 - docs: add xarielx as a contributor
+Issue# 241 - docs: add vkWeb as a contributor
+Issue# 242 - docs: add vkWeb as a contributor
+Issue# 243 - docs: add madaleneaza-design as a contributor
+Issue# 244 - docs: add SeanRParker as a contributor
+Issue# 245 - docs: add odomojuli as a contributor
+Issue# 246 - docs: add finisher1017 as a contributor
+Issue# 247 - Add .nvmrc file for easier local development
+Issue# 248 - [Fix] High CPU usage by Typescript File Watch
+Issue# 249 - docs: add Sonicrida as a contributor
+Issue# 250 - docs: add vaibhavsingh97 as a contributor
+Issue# 251 - Should API routes be revolving around chapters
+Issue# 252 - Sequelize vs Typeorm
+Issue# 253 - [WIP] fix(db, api): update database model & API schemas
+Issue# 254 - [DB Schema] User types
+Issue# 255 - Narrowing the Scope for First Steps
+Issue# 256 - docs: add Shub1427 as a contributor
+Issue# 257 - Sequelize -> TypeORM
+Issue# 258 - Decide which SSR Data Fetching Library to use
+Issue# 259 - npm install/audit found security flaws
+Issue# 260 - Documentation for How to Use Chapter as an Administrator
+Issue# 261 - Documentation for How to Install Chapter
+Issue# 262 - Documentation for Accounts and Notifications
+Issue# 263 - Create Privacy, TOS, FAQ
+Issue# 264 - UI: As an organizer I can see how many times a participant has come to my chapter's events as well as their attendance rate.
+Issue# 265 - UI: As an organizer I can add a sponsor to the event with a link to their website as a way of thanking them.
+Issue# 266 - UI: As an organizer I can ban a participant whom I believe is toxic or who has previously broken my organization's code of conduct.
+Issue# 267 - UI: As an organizer I can email the entire list of participants.
+Issue# 268 - UI: As an organizer I can cancel events and all participants who have RSVP'd will get an email notification.
+Issue# 269 - UI: As a user (authenticated or not) I can view the RSVP count for an event
+Issue# 270 - UI: As an organizer I can create events and set their location, tags and capacity.
+Issue# 271 - UI: As an organizer I can add a chapter or organization logo.
+Issue# 272 - UI: As an organizer I can edit details about the chapter, including a Slack/Discord/Facebook/WeChat/WhatsApp link participants can join to discuss and coordinate events.
+Issue# 273 - UI: As an organizer, I can create a chapter
+Issue# 274 - UI: As a chapter member, I can unsubscribe from emails.
+Issue# 275 - Text for: As a future participant after the event, I will automatically get emails notifying me of subsequent events.
+Issue# 276 - Text for: As a future participant I will receive a second email the day before the event to remind me.
+Issue# 277 - UI: As a future participant I can cancel the "RSVP".
+Issue# 278 - UI: As a future participant I can click the "RSVP" button. When I do, I will be prompted to sign in. Then I will receive an email with a ticket and add me to the public list of event attendees.
+Issue# 279 - UI: As a future participant when I click one of those locations, I can see the "show view" for that event's chapter, with details about the upcoming event, along with a button to RSVP.
+Issue# 280 - UI: As a future participant I can use a search box on the landing page to input a city, state, or country name and it will autocomplete. I can click one of those locations.
+Issue# 281 - UI: As an admin I can add a Google Analytics ID.
+Issue# 282 - Updated documentation & fix small error with environment variables
+Issue# 283 - Support for multiple email clients
+Issue# 284 - Docs: Update README: Tech Stack; Links for Vision, MVP, Roadmap; Clarify terminology

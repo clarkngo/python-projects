@@ -26,6 +26,11 @@
 # Runtime: 28 ms, faster than 83.36% of Python3 online submissions for Binary Tree Inorder Traversal.
 # Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Binary Tree Inorder Traversal.
 
+class TreeNode(self):
+    self.val
+    self.left
+    self.right
+
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         lst = []
@@ -37,3 +42,7 @@ class Solution:
             traversal.append(start.val)
             traversal = self._helper(start.right, traversal)
         return traversal
+
+s = Solution()
+a = s.inorderTraversal([1,null,2,3])
+print(a)

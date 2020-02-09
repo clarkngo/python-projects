@@ -61,6 +61,25 @@ a[-3::-1]  # everything except the last two items, reversed
 ```
 Source: https://stackoverflow.com/questions/509211/understanding-slice-notation
 
+## Dictionary
+Iterate over keys and values
+```
+days  = {'mon':'Monday', 'tue':'Tuesday', 'wed':'Wednesday', 'thu':'Thursday', 'fri':'Friday',
+        'sat':'Saturday', 'sun':'Sunday'}
+
+for day in days:
+    print(day, days[day])
+```
+Output:
+```
+mon Monday
+tue Tuesday
+wed Wednesday
+thu Thursday
+fri Friday
+sat Saturday
+sun Sunday
+```
 ## modules
 
 ### timeit

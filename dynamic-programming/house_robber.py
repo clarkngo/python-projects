@@ -19,6 +19,9 @@
 # Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).
 #              Total amount you can rob = 2 + 9 + 1 = 12.
 
+
+# need to read this up: https://medium.com/outco/how-to-solve-sliding-window-problems-28d67601a66
+
 import unittest # unit test framework
 from typing import List
 

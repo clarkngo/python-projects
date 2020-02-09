@@ -82,6 +82,8 @@ class Solution:
 
         m, n = len(nums1), len(nums2)
 
+        # the + 1 plays well for both even and odd number of elements
+        # in the combined array
         left_size = (m + n + 1) // 2
         start = 0
         end = m

@@ -20,8 +20,9 @@
 
 # performance not met
 def scramble(s1, s2):
+    if len(s1) < len(s2):
+        return False
     my_dict = {}
-
     # iterate over s1
     # add char as key and add frequency as value of s1
     for i in range(len(s1)):
@@ -48,6 +49,8 @@ def scramble(s1, s2):
 
 # performance not met
 def scramble2(s1, s2):
+    if len(s1) < len(s2):
+        return False
     my_dict = {}
     # iterate over s1
     # add char as key and add frequency as value of s1
@@ -67,3 +70,19 @@ def scramble2(s1, s2):
 
     # return true if there's no values with -1 or less
     return not any(x < 0 for x in my_dict.values())
+
+# performance not met
+def scramble3(s1, s2):
+    if len(s1) < len(s2):
+        return False
+    my_dict = {}
+    # create a list to be able to remove
+    s1_list = list(s1)
+    for i in range(len(s2)):
+        if s2[i] not in s1_list:
+            return False
+        else:
+            # remove first occurence
+            s1_list.remove(s2[i])
+
+    return True

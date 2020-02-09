@@ -1,26 +1,31 @@
+"""Solution for factorial"""
 class Solution:
-  def factorial(self, n):
-    if n == 1:
-      return 1
-    else:
-      return n * self.factorial(n-1)
+    """Solution"""
+    @staticmethod
+    def factorial(num):
+        """Factorial recursive approach"""
+        if num == 1:
+            return 1
+        return num * Solution.factorial(num-1)
 
-  def facIterative(self, n):
-    sum = 1
-    stack = []
-    stack.append(n)
-    while sum == 1:
-      n = stack[-1]       # get the last element
-      if stack[-1] == 1:  # base case: check if last element is 1
-        for num in stack:
-          sum *= num      #
-      else:
-        stack.append(n-1)
-      print(stack)
-    return sum
+    @staticmethod
+    def fac_iterative(num):
+        """Factorial iterative approach"""
+        result = 1
+        stack = []
+        stack.append(num)
+        while result == 1:
+            num = stack[-1]       # get the last element
+            if stack[-1] == 1:  # base case: check if last element is 1
+                for item in stack:
+                    result *= item      #
+            else:
+                stack.append(num-1)
+            print(stack)
+        return result
 
-s = Solution()
-a = s.factorial(5)
-b = s.facIterative(5)
-print(a)
-print(b)
+S = Solution()
+A = S.factorial(5)
+B = S.fac_iterative(5)
+print(A)
+print(B)
