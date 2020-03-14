@@ -10,8 +10,7 @@
 
 # Given 1->2->3->4, you should return the list as 2->1->4->3.
 
-
-Definition for singly-linked list.
+# Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -47,3 +46,34 @@ class Solution:
 
         # Return the new head node.
         return dummy.next
+
+"""
+Explanation:
+
+The following variables I would use:
+dummy_node = to store pointer of head node
+prev_node = node to point to the 1st node of the next pair
+first_node = 1st node of the current pair
+second_node = 2nd node of the current pair
+
+Initialization:
+dummy_node points to head node
+prev_node stores dummy_node
+
+LOOP while my pair of nodes is not None:
+
+Prepare first_node and second_node
+
+Swapping part:
+Let prev_node point to second_node
+Let first_node point to second_node.next (which is the next pair's 1st node)
+Let second_node point to first_node
+
+Reinitialization:
+prev_node stores the first_node
+head stores the first_node.next (which is the next pair's 1st node)
+
+END LOOP
+
+return dummy's pointer, which is head.
+"""

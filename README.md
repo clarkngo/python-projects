@@ -156,7 +156,7 @@ https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Q
 
 ---
 
-##String
+## String
 
 ### Longest Substring Without Repeating Characters - https://leetcode.com/problems/longest-substring-without-repeating-characters/
 ### Longest Repeating Character Replacement - https://leetcode.com/problems/longest-repeating-character-replacement/
