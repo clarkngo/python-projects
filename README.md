@@ -83,15 +83,76 @@ https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Q
 - return `-1`
 
 ### 3Sum - https://leetcode.com/problems/3sum/
+- Two Pointers
+- initialize an empty list `result`
+- sort the given list `nums`
+- iterate over the list with `length -2`
+  - if the number is greater than `0`
+    - break out of the loop
+  - if `index` is greater than `0` and current number is equal to previous number
+    - continue looping
+  - initialize `left` with `index + 1`, and `right` with `length - 1`
+  - create a while loop with condition `left` less than `right`
+    - reassign value of `total` to `nums[index] + nums[left] + nums[right]`
+    - if `total` is less than `0`
+      - increment `left` by `1`
+    - elif `total` is greater than `0`
+      - decrement `right` by `1`
+    - else
+      - append `result` list with `[nums[index], nums[left], nums[right]]`
+      - create a while loop with condition `left` less than `right`, and `nums[left]` is equals to `nums[left + 1]`
+        - increment `left` by `1`
+      - create a while loop with condition `left` less than `right`, and `nums[right]` is equals to `nums[right - 1]`
+        - decrement `right` by `1`
+      - increment `left` by `1`
+      - decrement `right` by `1`
+
 ### Container With Most Water - https://leetcode.com/problems/container-with-most-water/
+- Two Pointers
+- intialize `result` with `0`, `left` with `0`, and `right` with `length(height) - 1`
+- create a while loop with condition `left` less than `right`
+  - reassign `min_height` with the minimum between `height[left] and height[right]`
+  - reassign `result` with the maximum between `result` and `min_height` multiplied by `(right - left)`
+  - reassign `left` with `left` plus `(height[left] == min_height)`
+  - reassign `right` with `right` minus `right - (height[right] == min_height)`
+- return `result`
 
 ---
 
 ## Binary
 
 ### Sum of Two Integers - https://leetcode.com/problems/sum-of-two-integers/
+- given: int `a`, and int `b`
+- Note: `^` get different bits and `&` gets double 1s, `<<` moves carry
+- initialize a constant `MAX` with `0x7FFFFFFF` (integer max of 32 bits)
+- initialize a constant `MIN` with `0x80000000` (integer min of 32 bits)
+- initialize `mask` with `0xFFFFFFFF` (to get last 32 bits)
+- create a while loop with condition with `b` not equal to `0`
+  - reassign `a` with `(a ^ b) & mask`
+  - reassign `b` with `((a ^ b) << 1) & mask`
+- if `a` is less than or equal to `MAX`
+  - return `a`
+- else
+  - return `~(a ^ mask)`
+
 ### Number of 1 Bits - https://leetcode.com/problems/number-of-1-bits/
+- given: `n`
+- initialize `c` with `0`
+- create a while loop with condition `n` is not `0`
+  - reassign `n` with `n & (n - 1)`
+  - increment `c` by `1`
+- return `c`
+
 ### Counting Bits - https://leetcode.com/problems/counting-bits/
+- given: `num`
+- initialize a `result` list that has a size of `1` with a value of `0`
+- create a while loop with condition of length of `result` less than or equal to `num`
+  - initialize an empty list named `lst`
+  - iterate over `result` list using `for i in res`
+    - append `lst` with `i + 1`
+  - extend `result` with `lst`
+- return sliced `result` with `result[:num+1]`
+
 ### Missing Number - https://leetcode.com/problems/missing-number/
 ### Reverse Bits - https://leetcode.com/problems/reverse-bits/
 
