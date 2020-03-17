@@ -123,7 +123,7 @@ https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Q
 
 ### Sum of Two Integers - https://leetcode.com/problems/sum-of-two-integers/
 - given: int `a`, and int `b`
-- Note: `^` get different bits and `&` gets double 1s, `<<` moves carry
+- note: `^` get different bits and `&` gets double 1s, `<<` moves carry
 - initialize a constant `MAX` with `0x7FFFFFFF` (integer max of 32 bits)
 - initialize a constant `MIN` with `0x80000000` (integer min of 32 bits)
 - initialize `mask` with `0xFFFFFFFF` (to get last 32 bits)
@@ -136,7 +136,7 @@ https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Q
   - return `~(a ^ mask)`
 
 ### Number of 1 Bits - https://leetcode.com/problems/number-of-1-bits/
-- given: `n`
+- given: `n: int`, return `int`
 - initialize `c` with `0`
 - create a while loop with condition `n` is not `0`
   - reassign `n` with `n & (n - 1)`
@@ -144,26 +144,79 @@ https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Q
 - return `c`
 
 ### Counting Bits - https://leetcode.com/problems/counting-bits/
-- given: `num`
+- given: `num: int`, return `List[int]`
 - initialize a `result` list that has a size of `1` with a value of `0`
 - create a while loop with condition of length of `result` less than or equal to `num`
-  - initialize an empty list named `lst`
-  - iterate over `result` list using `for i in res`
-    - append `lst` with `i + 1`
-  - extend `result` with `lst`
+  - initialize an empty list named `new_list`
+  - iterate over `result` list using `for value in result`
+    - append `new_list` with `value + 1`
+  - extend `result` with `new_list`
 - return sliced `result` with `result[:num+1]`
 
 ### Missing Number - https://leetcode.com/problems/missing-number/
+- given: `num`
+- note: to get the sum of a number sequence - `n * (n+1) / 2`
+- initialize `n` with length of `nums`
+- return `n * (n+1) / 2 - sum(nums)`
+
 ### Reverse Bits - https://leetcode.com/problems/reverse-bits/
+- given: `n`
+- return `int("{:032b}".format(n)[::-1], 2)`
 
 ---
 
 ## Dynamic Programming
 
 ### Climbing Stairs - https://leetcode.com/problems/climbing-stairs/
+- given: `n: int`, return `int`
+- initialize `a` and `b` with the value of `1`
+- iterate over `n`
+  - reassign value of `a` with `b`
+  - reassign value of `b` with `a + b`
+- return `a`
+
 ### Coin Change - https://leetcode.com/problems/coin-change/
+- given: `coins: List[int]`, and `amount: int`
+- initialize `dp` as a list with length equal to the `amount` and list values of positive infinity `[float('Inf')] * (amount+1)`
+- reintialize first element of `dp` with `0`
+- sort the `coins`
+- iterate over `amount + 1`, starting from `1`
+  - reassign value of `temp` list with `[float('Inf')]`
+  - iterate over `coins` list with `c` values
+    - if outer loop `i` minus `c` is less than `0`
+      - break out of the inner loop
+      - append `temp` with `dp[i-c]`
+    - reassign current `dp` with minimum value in `temp` then plus `1`
+- if `dp[amount]` is not equal to `float('Inf')`
+  - return `dp[amount]`
+- else
+  - return `-1`
+
+
 ### Longest Increasing Subsequence - https://leetcode.com/problems/longest-increasing-subsequence/
-### Longest Common Subsequence -
+- given: `nums: List[int]`, return `int`
+- create a binary search function `binarySearch`
+- intialize empty list `sub`
+- iterate over `nums` list with `value` as element
+  - reassign value of `position` with value of `binarySearch` with parameters `sub` and `value`
+  - if `position` is equal to length of `sub`
+    - append `sub` list with `value`
+  - else
+    - reassign `sub[position]` with `value`
+- return length of `sub`
+
+### Longest Common Subsequence - https://leetcode.com/problems/longest-common-subsequence/
+- given: `text1: str`, `text2: str`, return `int`
+- initialize `n` with length of `text1`, `m` with length of `text2`
+- initialize a list `dp` with length of `n+1` with sub-list size of `m` with `0` values, which is `[[0] * (m + 1) for _ in range(n+1)]`
+- iterate over a loop with `n`, `i` as index
+  - iterate over a loop with `m`, `j` as index
+    - if `text1[i]` is equal to `text[j]`
+      - change the value of `dp[i+1][j+1]` with `dp[i][j] + 1`
+    - else
+      - change the value of `dp[i+1][j+1]` with the maximum between `dp[i][j+1]` and `dp[i+1][j]`
+- return `dp[-1][-1]`
+
 ### Word Break Problem - https://leetcode.com/problems/word-break/
 ### Combination Sum - https://leetcode.com/problems/combination-sum-iv/
 ### House Robber - https://leetcode.com/problems/house-robber/
