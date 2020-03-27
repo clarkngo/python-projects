@@ -218,6 +218,21 @@ https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Q
 - return `dp[-1][-1]`
 
 ### Word Break Problem - https://leetcode.com/problems/word-break/
+- given: non-empty string `s` and dictionary of words in a list `wordDict`
+- edge case: if `wordDict` is empty, return `False`
+- initialize dictionary with word in `wordDict` as key, and length of word as value
+- initialize length `m` with length of maximum between `wordDict` and `key=len`
+- initialize `dp` list with `False` values for length of non-empty string `s` plus `1`
+- reinitialize first `dp` element with `True`
+- iterate over a loop with the length of non-empty string `s` using `i` as index
+  - if current element in `dp` is `True`
+    - iterate over a loop starting with `i` of the outer loop and ending with the minimum between the length of non-empty string `s` and `i` plus `m`. Using `j` as index
+      - if slicing of `s` starting with `i` and stopping at `j+1` is in `wordDict`
+        - update element in `dp` with position `j+1` as `True`
+    - if last element in `dp` is `True`
+      - return `True`
+- return `False`
+
 ### Combination Sum - https://leetcode.com/problems/combination-sum-iv/
 ### House Robber - https://leetcode.com/problems/house-robber/
 ### House Robber II - https://leetcode.com/problems/house-robber-ii/
