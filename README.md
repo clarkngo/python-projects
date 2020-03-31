@@ -2,6 +2,7 @@
 
 https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU?fbclid=IwAR1i0M8Xilh-mz86SdDd4zFSNk4uZkuCAwDNUSzLvnOAaM-GPi129FN97q8
 
+
 ## Array
 
 ### Two Sum - https://leetcode.com/problems/two-sum/
@@ -51,7 +52,7 @@ https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Q
 - initialize a new list `B` with the reverse of the given list `A` `[::-1]`
 - iterate over the given list skipping the first index
   - reassign the value of `A[i]` with multiplying `A[i]` and `A[i-1] or 1` (if `A[i-1]` is `0`, `1` will be used instead)
-  - reassign the value of `B[i]` with multiplying `B[i]` and `B[i-1] or ` (if `B[i-1]` is `0`, `1` will be used instead)
+  - reassign the value of `B[i]` with multiplying `B[i]` and `B[i-1] or 1` (if `B[i-1]` is `0`, `1` will be used instead)
 - return the largest product with `max` in both lists `max(A+B)`
 
 ### Find Minimum in Rotated Sorted Array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
