@@ -49,10 +49,21 @@ https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Q
 - return `maximum_sum`
 
 ### Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/
+- given list with numbers: `A`, return `int`
 - initialize a new list `B` with the reverse of the given list `A` `[::-1]`
 - iterate over the given list skipping the first index
   - reassign the value of `A[i]` with multiplying `A[i]` and `A[i-1] or 1` (if `A[i-1]` is `0`, `1` will be used instead)
   - reassign the value of `B[i]` with multiplying `B[i]` and `B[i-1] or 1` (if `B[i-1]` is `0`, `1` will be used instead)
+- return the largest product with `max` in both lists `max(A+B)`
+
+#### Refactor - add conditional to improve readability
+- given list with numbers: `A`, return `int`
+- initialize a new list `B` with the reverse of the given list `A` `[::-1]`
+- iterate over the given list skipping the first index
+  - if `A[i-1]` is not equal to `0`
+    - reassign the value of `A[i]` with multiplying `A[i]` and `A[i-1]`
+  - if `B[i-1]` is not equal to `0`
+    - reassign the value of `B[i]` with multiplying `B[i]` and `B[i-1]`
 - return the largest product with `max` in both lists `max(A+B)`
 
 ### Find Minimum in Rotated Sorted Array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
