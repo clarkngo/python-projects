@@ -1,6 +1,6 @@
 # Coding Interview Prep
 
-https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU?fbclid=IwAR1i0M8Xilh-mz86SdDd4zFSNk4uZkuCAwDNUSzLvnOAaM-GPi129FN97q8
+[Top 5 Leetcode Questions](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU?fbclid=IwAR1i0M8Xilh-mz86SdDd4zFSNk4uZkuCAwDNUSzLvnOAaM-GPi129FN97q8)
 
 
 ## Array
