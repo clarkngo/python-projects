@@ -1,6 +1,7 @@
-* 95c4415, 43 minutes ago : update changelog
-* 878542e, 49 minutes ago : add changelog
-* 961da96, 53 minutes ago : update link
+* f298eba, 8 minutes ago : changelog
+* 95c4415, 50 minutes ago : update changelog
+* 878542e, 57 minutes ago : add changelog
+* 961da96, 61 minutes ago : update link
 * 6694630, 2 days ago : refactor
 * bbe46e5, 2 days ago : typo
 * 650cf99, 6 days ago : word break problem
