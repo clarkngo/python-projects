@@ -1,5 +1,6 @@
+* 807192a, 16 seconds ago : update changelog
 * f298eba, 8 minutes ago : changelog
-* 95c4415, 50 minutes ago : update changelog
+* 95c4415, 51 minutes ago : update changelog
 * 878542e, 57 minutes ago : add changelog
 * 961da96, 61 minutes ago : update link
 * 6694630, 2 days ago : refactor
