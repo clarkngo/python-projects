@@ -1,0 +1,19 @@
+{
+  "name": "python-projects",
+  "version": "1.0.0",
+  "description": "https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU?fbclid=IwAR1i0M8Xilh-mz86SdDd4zFSNk4uZkuCAwDNUSzLvnOAaM-GPi129FN97q8",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarkngo/python-projects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clarkngo/python-projects/issues"
+  },
+  "homepage": "https://github.com/clarkngo/python-projects#readme"
+}

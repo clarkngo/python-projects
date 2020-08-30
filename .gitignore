@@ -3,3 +3,4 @@ __pycache__
 .vscode
 example.py
 .DS_Store
+node_modules
